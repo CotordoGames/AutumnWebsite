@@ -1,0 +1,225 @@
+@font-face {
+  font-family: Cubon;
+  src:
+    url("JBM.ttf")
+}
+
+@font-face {
+  font-family: Code;
+  src:
+    url("CubonV3.ttf")
+}
+
+body {
+  background-image: url("bg-image.png");
+  background-color: black;
+  background-attachment: fixed;
+  background-size: 100% auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+h1 {
+  font-family: Cubon;
+  color: rgb(87, 193, 255);
+  text-align: center;
+  font-size: 64px;
+}
+
+h2 {
+  font-family: Cubon;
+  color: rgb(0, 107, 48);
+  text-align: center;
+  font-size: 48px;
+}
+
+p {
+  font-family: Cubon;
+  font-size: 24px;
+  color: white;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 192px;
+}
+
+.download-btn {
+  font-family: Cubon;
+  font-size: 32px;
+  border: purple;
+  cursor: pointer;
+
+  width: 480px;
+  height: 96px;
+
+  background-color: rgb(92, 0, 0);
+  color: rgb(255, 255, 255);
+
+  border-radius: 64px;
+  border: 4px solid rgb(54, 0, 16);
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-btn:hover {
+  background-color: rgb(145, 0, 67);
+}
+
+.button-wrapper{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.releases-link {
+  display: flex;
+  justify-content: center;
+  color: rgb(69, 156, 255);
+  font-family: Cubon;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.releases-link:hover {
+  color: rgb(23, 108, 204);
+}
+
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 15%;
+}
+
+.screenshot-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 4px solid rgb(92, 0, 43);
+  display: block;
+}
+
+.devlog-container {
+  max-width: 1000px;
+  margin: 20px auto 60px auto;
+  padding: 0 15%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.devlog-post {
+  background-color: rgba(92, 0, 43, 0.25);
+  border: 4px solid rgb(92, 0, 43);
+  border-radius: 0px;
+  padding: 24px 30px;
+}
+
+.devlog-date {
+  font-family: Cubon;
+  font-size: 24px;
+  color: rgb(255, 182, 222);
+  margin-bottom: 8px;
+}
+
+.devlog-title {
+  font-family: Cubon;
+  color: rgb(255, 211, 65);
+  font-size: 36px;
+  margin: 0 0 48px 0;
+}
+
+.devlog-body p {
+  font-family: Cubon;
+  font-size: 28px;
+  color: white;
+  margin: 0 0 12px 0;
+}
+
+.devlog-body code {
+  font-family: Code;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 28px;
+}
+
+.cast-container {
+  max-width: 1000px;
+  margin: 20px auto 60px auto;
+  padding: 0 15%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cast-entry {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background-color: rgba(92, 0, 43, 0.25);
+  border: 4px solid rgb(92, 0, 43);
+  border-radius: 0px;
+  padding: 20px;
+}
+
+.cast-portrait {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.cast-name {
+  font-family: Cubon;
+  color: rgb(255, 211, 65);
+  font-size: 36px;
+  margin: 0 0 48px 0;
+}
+
+.cast-bio {
+  font-family: Cubon;
+  font-size: 28px;
+  color: white;
+  margin: 0 0 12px 0;
+}
+
+.cast-secret {
+  color: transparent;
+  user-select: text;
+}
+
+@media (max-width: 700px) {
+  .cast-container {
+    padding: 0 5%;
+  }
+  .cast-entry {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .devlog-container {
+    padding: 0 5%;
+  }
+}
+
+@media (max-width: 700px) {
+  .screenshot-grid {
+    grid-template-columns: 1fr;
+    padding: 0 5%;
+  }
+}
